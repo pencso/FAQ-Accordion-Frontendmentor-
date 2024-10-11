@@ -78,12 +78,12 @@ main {
 
 }
 
-.inline-wrap h3 {
+.inline-wrap h2 {
     color: var(--Dark-purple);
     font-weight: 600; 
 }
 
-.inline-wrap h3:hover {
+.inline-wrap h2:hover {
     color: rgb(163, 52, 197);
     cursor: pointer;
 }
@@ -120,7 +120,7 @@ footer {
         font-size: 2rem;
     }
 
-    .inline-wrap h3 {
+    .inline-wrap h2 {
         font-size: 1.rem;
     }
 
