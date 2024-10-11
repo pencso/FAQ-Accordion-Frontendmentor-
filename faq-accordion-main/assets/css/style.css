@@ -80,7 +80,8 @@ main {
 
 .inline-wrap h2 {
     color: var(--Dark-purple);
-    font-weight: 600; 
+    font-weight: 600;
+    font-size: 1.17rem;
 }
 
 .inline-wrap h2:hover {
