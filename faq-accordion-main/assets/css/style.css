@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+p {
+    font-size: 1rem;
+    color: var(--Grayish-purple);
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+body {
+    background: url(/assets/images/background-pattern-desktop.svg);
+    background-color: var(--Light-pink);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 101%;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+
+main * {
+    padding: .1rem 0 .1rem 0;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    padding: 0;
+    
+}
+
+.inline-wrap img {
+    cursor: pointer;   
+}
+
+main {
+    background-color: white;
+    width: clamp(300px, 600px, 92%);
+    padding: 2rem;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: max-content;
+}
+
+.answer {
+    display: none;
+    
+}
+
+.header {
+    display: flex;
+    gap: 1rem;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+
+}
+
+.inline-wrap h3 {
+    color: var(--Dark-purple);
+    font-weight: 600; 
+}
+
+.inline-wrap h3:hover {
+    color: rgb(163, 52, 197);
+    cursor: pointer;
+}
+
+.inline-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+hr {
+    border: 1px solid rgba(220, 219, 219, 0.475);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .inline-wrap h3 {
+        font-size: 1.rem;
+    }
+
+    body {
+        background-size: inherit;
+        display: inherit;
+    }
+
+    main {
+        margin: 0 auto;
+        margin-top: 10rem;
+        padding: 1.5rem;
+    }
+}
